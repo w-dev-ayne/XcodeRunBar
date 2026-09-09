@@ -60,7 +60,7 @@ Xcode runs — no window switching needed
 
 **Option A — Terminal (recommended)**
 ```bash
-xattr -dr com.apple.quarantine /Applications/XcodeRunBar.app
+xattr -dr com.apple.quarantine /Applications/RunBar.app
 ```
 
 **Option B — System Settings**
