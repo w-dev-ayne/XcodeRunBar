@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AABBCCDD0000000000000001 /* RunBarApp.swift in Sources */   = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000002 /* RunBarApp.swift */; };
+		AABBCCDD0000000000000003 /* XcodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000004 /* XcodeManager.swift */; };
+		AABBCCDD000000000000001A /* AppDelegate.swift in Sources */  = {isa = PBXBuildFile; fileRef = AABBCCDD000000000000001B /* AppDelegate.swift */; };
+		AABBCCDD0000000000000007 /* Assets.xcassets in Resources */  = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000008 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AABBCCDD000000000000000A /* RunBar.app */       = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABBCCDD0000000000000002 /* RunBarApp.swift */  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunBarApp.swift;  sourceTree = "<group>"; };
+		AABBCCDD0000000000000004 /* XcodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeManager.swift; sourceTree = "<group>"; };
+		AABBCCDD000000000000001B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift;  sourceTree = "<group>"; };
+		AABBCCDD0000000000000008 /* Assets.xcassets */  = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AABBCCDD0000000000000019 /* Info.plist */       = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AABBCCDD0000000000000011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AABBCCDD000000000000000B = {
+			isa = PBXGroup;
+			children = (
+				AABBCCDD000000000000000C /* RunBar */,
+				AABBCCDD000000000000000D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AABBCCDD000000000000000C /* RunBar */ = {
+			isa = PBXGroup;
+			children = (
+				AABBCCDD0000000000000002 /* RunBarApp.swift */,
+				AABBCCDD000000000000001B /* AppDelegate.swift */,
+				AABBCCDD0000000000000004 /* XcodeManager.swift */,
+				AABBCCDD0000000000000008 /* Assets.xcassets */,
+				AABBCCDD0000000000000019 /* Info.plist */,
+			);
+			path = RunBar;
+			sourceTree = "<group>";
+		};
+		AABBCCDD000000000000000D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AABBCCDD000000000000000A /* RunBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AABBCCDD000000000000000E /* RunBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABBCCDD0000000000000013 /* Build configuration list for PBXNativeTarget "RunBar" */;
+			buildPhases = (
+				AABBCCDD000000000000000F /* Sources */,
+				AABBCCDD0000000000000010 /* Resources */,
+				AABBCCDD0000000000000011 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunBar;
+			productName = RunBar;
+			productReference = AABBCCDD000000000000000A /* RunBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AABBCCDD0000000000000018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AABBCCDD000000000000000E = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AABBCCDD0000000000000012 /* Build configuration list for PBXProject "RunBar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AABBCCDD000000000000000B;
+			productRefGroup = AABBCCDD000000000000000D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AABBCCDD000000000000000E /* RunBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABBCCDD0000000000000010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABBCCDD0000000000000007 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AABBCCDD000000000000000F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABBCCDD0000000000000001 /* RunBarApp.swift in Sources */,
+				AABBCCDD0000000000000003 /* XcodeManager.swift in Sources */,
+				AABBCCDD000000000000001A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AABBCCDD0000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AABBCCDD0000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AABBCCDD0000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RunBar/Info.plist;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.runbar.RunBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AABBCCDD0000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = RunBar/Info.plist;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.runbar.RunBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AABBCCDD0000000000000012 /* Build configuration list for PBXProject "RunBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABBCCDD0000000000000014 /* Debug */,
+				AABBCCDD0000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABBCCDD0000000000000013 /* Build configuration list for PBXNativeTarget "RunBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABBCCDD0000000000000016 /* Debug */,
+				AABBCCDD0000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AABBCCDD0000000000000018 /* Project object */;
+}

@@ -1,0 +1,84 @@
+# ===========================
+# Xcode
+# ===========================
+
+# 빌드 결과물
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode 사용자별 설정 (다른 사람 환경 침범 방지)
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# Xcode 8 이상
+*.xcscmblueprint
+*.xccheckout
+
+# Playground
+timeline.xctimeline
+playground.xcworkspace
+
+# ===========================
+# Swift Package Manager
+# ===========================
+
+.build/
+.swiftpm/
+*.resolved          # 의도적으로 커밋하려면 이 줄 삭제
+
+# ===========================
+# CocoaPods (미사용이지만 혹시 몰라)
+# ===========================
+
+Pods/
+*.xcworkspace
+
+# ===========================
+# macOS
+# ===========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# ===========================
+# 배포 산출물 (repo에 올리지 않음)
+# ===========================
+
+*.dmg
+*.pkg
+*.zip
+
+# ===========================
+# 에디터 / IDE
+# ===========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===========================
+# 환경설정 / 민감 정보
+# ===========================
+
+.env
+*.pem
+*.p12
+*.mobileprovision
+AuthKey_*.p8
