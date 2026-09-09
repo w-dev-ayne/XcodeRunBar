@@ -55,13 +55,21 @@ Xcode runs — no window switching needed
 
 1. Download the latest `XcodeRunBar.dmg` from [Releases](https://github.com/w-dev-ayne/XcodeRunBar/releases)
 2. Open the DMG and drag **XcodeRunBar.app** to your Applications folder
-3. Remove the quarantine flag:
+3. Try to launch **XcodeRunBar** — macOS will block it with a Gatekeeper warning
+4. Remove the quarantine flag using one of the methods below:
 
+**Option A — Terminal (recommended)**
 ```bash
 xattr -dr com.apple.quarantine /Applications/XcodeRunBar.app
 ```
 
-4. Launch **XcodeRunBar** from Applications
+**Option B — System Settings**
+1. Open **System Settings → Privacy & Security**
+2. Scroll down to the Security section
+3. You'll see _"XcodeRunBar was blocked"_ — click **Open Anyway**
+4. Confirm by clicking **Open** in the dialog
+
+5. Launch **XcodeRunBar** from Applications
 
 ---
 
