@@ -26,6 +26,10 @@ Click ▶ in menu bar
 Xcode runs — no window switching needed
 ```
 
+| Xcode open | No Xcode |
+|:---:|:---:|
+| ![active](assets/active.png) | ![inactive](assets/inactive.png) |
+
 ---
 
 ## Features
