@@ -21,7 +21,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         // 생성 순서 = 오른쪽 → 왼쪽 (나중에 만들수록 왼쪽에 배치)
         runItem  = makeItem(symbol: "play.fill",  description: "Run",    length: 20) // 오른쪽
         stopItem = makeItem(symbol: "stop.fill",  description: "Stop",   length: 20) // Stop이 왼쪽
-        infoItem = makeItem(symbol: "hammer",     description: "RunBar"            ) // 맨 왼쪽
+        infoItem = makeItem(symbol: "hammer",     description: "XcodeRunBar"       ) // 맨 왼쪽
 
         // 앱 정보 아이콘은 항상 고정 드롭다운
         infoItem?.menu = buildInfoMenu()
@@ -88,7 +88,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
         // 앱 이름 + 버전 (비활성 헤더)
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.1"
-        let header = NSMenuItem(title: "RunBar \(version)", action: nil, keyEquivalent: "")
+        let header = NSMenuItem(title: "XcodeRunBar \(version)", action: nil, keyEquivalent: "")
         header.isEnabled = false
         menu.addItem(header)
 
@@ -108,7 +108,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(.separator())
 
         menu.addItem(infoMenuItem(
-            title:  "Quit RunBar",
+            title:  "Quit XcodeRunBar",
             symbol: "power",
             action: #selector(quitApp),
             key:    "q"
@@ -158,7 +158,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                 if latest.compare(current, options: .numeric) == .orderedDescending {
                     let alert = NSAlert()
                     alert.messageText = "New Version Available!"
-                    alert.informativeText = "RunBar \(latest) is now available.\n(Current version: \(current))"
+                    alert.informativeText = "XcodeRunBar \(latest) is now available.\n(Current version: \(current))"
                     alert.alertStyle = .informational
                     alert.addButton(withTitle: "Download")
                     alert.addButton(withTitle: "Later")
@@ -167,7 +167,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                         NSWorkspace.shared.open(url)
                     }
                 } else {
-                    self.showAlert(title: "RunBar", message: "You're up to date. ✓\n(Current version: \(current))")
+                    self.showAlert(title: "XcodeRunBar", message: "You're up to date. ✓\n(Current version: \(current))")
                 }
             }
         }.resume()

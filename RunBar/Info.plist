@@ -23,6 +23,6 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSAppleEventsUsageDescription</key>
-	<string>RunBar needs permission to control Xcode to run and stop your projects.</string>
+	<string>XcodeRunBar needs permission to control Xcode to run and stop your projects.</string>
 </dict>
 </plist>
