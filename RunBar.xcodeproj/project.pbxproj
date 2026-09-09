@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AABBCCDD0000000000000001 /* RunBarApp.swift in Sources */   = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000002 /* RunBarApp.swift */; };
+		AABBCCDD0000000000000001 /* RunBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000002 /* RunBarApp.swift */; };
 		AABBCCDD0000000000000003 /* XcodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000004 /* XcodeManager.swift */; };
-		AABBCCDD000000000000001A /* AppDelegate.swift in Sources */  = {isa = PBXBuildFile; fileRef = AABBCCDD000000000000001B /* AppDelegate.swift */; };
-		AABBCCDD0000000000000007 /* Assets.xcassets in Resources */  = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000008 /* Assets.xcassets */; };
+		AABBCCDD0000000000000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000008 /* Assets.xcassets */; };
+		AABBCCDD000000000000001A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABBCCDD000000000000001B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AABBCCDD000000000000000A /* RunBar.app */       = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AABBCCDD0000000000000002 /* RunBarApp.swift */  = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunBarApp.swift;  sourceTree = "<group>"; };
+		AABBCCDD0000000000000002 /* RunBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunBarApp.swift; sourceTree = "<group>"; };
 		AABBCCDD0000000000000004 /* XcodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeManager.swift; sourceTree = "<group>"; };
-		AABBCCDD000000000000001B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift;  sourceTree = "<group>"; };
-		AABBCCDD0000000000000008 /* Assets.xcassets */  = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AABBCCDD0000000000000019 /* Info.plist */       = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABBCCDD0000000000000008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AABBCCDD000000000000000A /* RunBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABBCCDD0000000000000019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABBCCDD000000000000001B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,14 +203,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = RunBar/Info.plist;
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.runbar.RunBar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wayne.xcoderunbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -221,14 +223,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = RunBar/Info.plist;
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.runbar.RunBar";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wayne.xcoderunbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
