@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AABBCCDD000000000000000E"
-               BuildableName = "RunBar.app"
+               BuildableName = "XcodeRunBar.app"
                BlueprintName = "RunBar"
                ReferencedContainer = "container:RunBar.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AABBCCDD000000000000000E"
-            BuildableName = "RunBar.app"
+            BuildableName = "XcodeRunBar.app"
             BlueprintName = "RunBar"
             ReferencedContainer = "container:RunBar.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AABBCCDD000000000000000E"
-            BuildableName = "RunBar.app"
+            BuildableName = "XcodeRunBar.app"
             BlueprintName = "RunBar"
             ReferencedContainer = "container:RunBar.xcodeproj">
          </BuildableReference>
