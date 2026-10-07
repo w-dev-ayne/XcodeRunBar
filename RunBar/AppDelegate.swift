@@ -5,6 +5,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     private let manager = XcodeManager()
 
     // 메뉴바 아이콘 3개 (왼쪽 → 오른쪽: 🔨 앱정보 | ▶ Run | ■ Stop)
+    // Run이 왼쪽, Stop이 오른쪽
     private var infoItem: NSStatusItem?
     private var runItem:  NSStatusItem?
     private var stopItem: NSStatusItem?
@@ -19,8 +20,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func setupStatusItems() {
         // 생성 순서 = 오른쪽 → 왼쪽 (나중에 만들수록 왼쪽에 배치)
-        runItem  = makeItem(symbol: "play.fill",  description: "Run",    length: 20) // 오른쪽
-        stopItem = makeItem(symbol: "stop.fill",  description: "Stop",   length: 20) // Stop이 왼쪽
+        stopItem = makeItem(symbol: "stop.fill",  description: "Stop",   length: 20) // 오른쪽
+        runItem  = makeItem(symbol: "play.fill",  description: "Run",    length: 20) // Run이 왼쪽
         infoItem = makeItem(symbol: "hammer",     description: "XcodeRunBar"       ) // 맨 왼쪽
 
         // 앱 정보 아이콘은 항상 고정 드롭다운
@@ -43,28 +44,27 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func refreshRunStop() {
         let projects = manager.projects
+        let canRun  = projects.contains { !$0.isRunning }
+        let canStop = projects.contains { $0.isRunning }
+
+        // Xcode 없음 / 실행할 것 없음 / 정지할 것 없음 → dim 처리
+        setDimmed(runItem,  dimmed: !canRun)
+        setDimmed(stopItem, dimmed: !canStop)
 
         switch projects.count {
         case 0:
-            // Xcode 없음 — 아이콘 dim 처리
-            setDimmed(runItem,  dimmed: true)
-            setDimmed(stopItem, dimmed: true)
             bind(runItem,  menu: nil, action: nil)
             bind(stopItem, menu: nil, action: nil)
 
         case 1:
             // 프로젝트 하나 — 클릭 즉시 실행/정지
-            setDimmed(runItem,  dimmed: false)
-            setDimmed(stopItem, dimmed: false)
-            bind(runItem,  menu: nil, action: #selector(runSingle))
-            bind(stopItem, menu: nil, action: #selector(stopSingle))
+            bind(runItem,  menu: nil, action: canRun  ? #selector(runSingle)  : nil)
+            bind(stopItem, menu: nil, action: canStop ? #selector(stopSingle) : nil)
 
         default:
             // 프로젝트 여러 개 — 선택 드롭다운
-            setDimmed(runItem,  dimmed: false)
-            setDimmed(stopItem, dimmed: false)
-            bind(runItem,  menu: buildMenu(projects, mode: .run),  action: nil)
-            bind(stopItem, menu: buildMenu(projects, mode: .stop), action: nil)
+            bind(runItem,  menu: canRun  ? buildMenu(projects, mode: .run)  : nil, action: nil)
+            bind(stopItem, menu: canStop ? buildMenu(projects, mode: .stop) : nil, action: nil)
         }
     }
 
@@ -196,7 +196,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             ? ("▶", #selector(runProject(_:)))
             : ("■", #selector(stopProject(_:)))
 
-        for project in projects {
+        // Run 메뉴는 실행 중이 아닌 프로젝트만, Stop 메뉴는 실행 중인 프로젝트만
+        for project in projects where project.isRunning == (mode == .stop) {
             let item = NSMenuItem(title: "\(prefix)  \(project.name)", action: action, keyEquivalent: "")
             item.target = self
             item.representedObject = project
@@ -208,12 +209,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     // MARK: - Run / Stop 액션
 
     @objc private func runSingle() {
-        guard let p = manager.projects.first else { return }
+        guard let p = manager.projects.first, !p.isRunning else { return }
         manager.run(p)
     }
 
     @objc private func stopSingle() {
-        guard let p = manager.projects.first else { return }
+        guard let p = manager.projects.first, p.isRunning else { return }
         manager.stop(p)
     }
 
